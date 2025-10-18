@@ -18,3 +18,19 @@ const PI = 3.14              // geometrical constant
 let username = 'Asabeneh',     //name of a person
   job = 'teacher',
   live = 'Finland'
+
+// Export all variables
+module.exports = {
+  firstName,
+  lastName,
+  country,
+  city,
+  age,
+  isMarried,
+  gravity,
+  boilingPoint,
+  PI,
+  username,
+  job,
+  live
+}
