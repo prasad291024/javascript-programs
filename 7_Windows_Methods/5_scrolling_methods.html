@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Scrolling Methods Demo</title>
+  <style>
+    body {
+      height: 2000px; /* Make the page tall enough to scroll */
+      padding: 20px;
+    }
+    .box {
+      width: 200px;
+      height: 100px;
+      background-color: lightblue;
+      margin-top: 1500px;
+      text-align: center;
+      line-height: 100px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h2>Scrolling Methods</h2>
+
+  <button onclick="scrollToPosition()">Scroll to 500px</button>
+  <button onclick="scrollByAmount()">Scroll down by 300px</button>
+  <button onclick="scrollToBox()">Scroll to Box</button>
+
+  <div class="box" id="targetBox">Scroll Target</div>
+
+  <script>
+    // 1. window.scroll() – Scroll to a specific position
+    function scrollToPosition() {
+      window.scroll({
+        top: 500,
+        behavior: 'smooth'
+      });
+      console.log("Scrolled to 500px.");
+    }
+
+    // 2. window.scrollBy() – Scroll by a relative amount
+    function scrollByAmount() {
+      window.scrollBy({
+        top: 300,
+        behavior: 'smooth'
+      });
+      console.log("Scrolled down by 300px.");
+    }
+
+    // 3. window.scrollTo() – Scroll to exact coordinates
+    function scrollToBox() {
+      const box = document.getElementById("targetBox");
+      const boxPosition = box.offsetTop;
+      window.scrollTo({
+        top: boxPosition,
+        behavior: 'smooth'
+      });
+      console.log("Scrolled to the box.");
+    }
+  </script>
+</body>
+</html>

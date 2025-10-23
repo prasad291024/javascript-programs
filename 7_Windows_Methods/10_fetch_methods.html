@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head><title>Fetch Demo</title></head>
+<body>
+  <h2>Fetch API Example</h2>
+  <button onclick="fetchData()">Fetch Data</button>
+
+  <script>
+    function fetchData() {
+      fetch("https://jsonplaceholder.typicode.com/posts/1")
+        .then(response => response.json())
+        .then(data => {
+          console.log("Fetched Data:", data);
+        })
+        .catch(error => {
+          console.error("Fetch Error:", error);
+        });
+    }
+  </script>
+</body>
+</html>

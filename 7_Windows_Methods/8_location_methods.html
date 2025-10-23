@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head><title>Location Methods Demo</title></head>
+<body>
+  <h2>Location Methods</h2>
+  <button onclick="assignPage()">Assign New Page</button>
+  <button onclick="replacePage()">Replace Page</button>
+  <button onclick="reloadPage()">Reload Page</button>
+
+  <script>
+    function assignPage() {
+      location.assign("https://www.example.com");
+    }
+
+    function replacePage() {
+      location.replace("https://www.example.com");
+    }
+
+    function reloadPage() {
+      location.reload();
+    }
+  </script>
+</body>
+</html>

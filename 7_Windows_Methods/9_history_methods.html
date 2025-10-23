@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head><title>History Methods Demo</title></head>
+<body>
+  <h2>History Methods</h2>
+  <button onclick="goBack()">Go Back</button>
+  <button onclick="goForward()">Go Forward</button>
+  <button onclick="goTo()">Go to -1 (Back)</button>
+
+  <script>
+    function goBack() {
+      history.back();
+    }
+
+    function goForward() {
+      history.forward();
+    }
+
+    function goTo() {
+      history.go(-1); // Go back one page
+    }
+  </script>
+</body>
+</html>

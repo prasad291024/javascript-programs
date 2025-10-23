@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head><title>Storage Methods Demo</title></head>
+<body>
+  <h2>Storage Methods</h2>
+  <button onclick="storeData()">Store Data</button>
+  <button onclick="readData()">Read Data</button>
+  <button onclick="clearData()">Clear Data</button>
+
+  <script>
+    function storeData() {
+      localStorage.setItem("username", "Prasad");
+      sessionStorage.setItem("sessionId", "ABC123");
+      console.log("Data stored.");
+    }
+
+    function readData() {
+      console.log("LocalStorage username:", localStorage.getItem("username"));
+      console.log("SessionStorage sessionId:", sessionStorage.getItem("sessionId"));
+    }
+
+    function clearData() {
+      localStorage.clear();
+      sessionStorage.clear();
+      console.log("Storage cleared.");
+    }
+  </script>
+</body>
+</html>

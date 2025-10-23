@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Window Size & Position Methods</title>
+</head>
+<body>
+  <h2>Window Size and Position Demo</h2>
+
+  <button onclick="openPopup()">Open Popup Window</button>
+  <button onclick="moveByPixels()">Move By (50px right, 50px down)</button>
+  <button onclick="moveToPosition()">Move To (100px, 100px)</button>
+  <button onclick="resizeByPixels()">Resize By (50px wider, 50px taller)</button>
+  <button onclick="resizeToSize()">Resize To (400px x 300px)</button>
+
+  <script>
+    let popup;
+
+    function openPopup() {
+      popup = window.open("", "popupWindow", "width=300,height=200,left=200,top=200");
+      popup.document.write("<h3>This is a popup window</h3>");
+      console.log("Popup opened.");
+    }
+
+    function moveByPixels() {
+      if (popup && !popup.closed) {
+        popup.moveBy(50, 50);
+        console.log("Moved by 50px right and down.");
+      }
+    }
+
+    function moveToPosition() {
+      if (popup && !popup.closed) {
+        popup.moveTo(100, 100);
+        console.log("Moved to position (100, 100).");
+      }
+    }
+
+    function resizeByPixels() {
+      if (popup && !popup.closed) {
+        popup.resizeBy(50, 50);
+        console.log("Resized by 50px wider and taller.");
+      }
+    }
+
+    function resizeToSize() {
+      if (popup && !popup.closed) {
+        popup.resizeTo(400, 300);
+        console.log("Resized to 400px x 300px.");
+      }
+    }
+  </script>
+</body>
+</html>

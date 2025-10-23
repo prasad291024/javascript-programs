@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head><title>Console Methods Demo</title></head>
+<body>
+  <h2>Console Methods</h2>
+  <button onclick="logMessages()">Run Console Methods</button>
+
+  <script>
+    function logMessages() {
+      console.clear();
+      console.log("This is a log message.");
+      console.info("This is an info message.");
+      console.warn("This is a warning message.");
+      console.error("This is an error message.");
+      console.table([
+        { name: "Prasad", role: "Learner" },
+        { name: "Copilot", role: "Guide" }
+      ]);
+    }
+  </script>
+</body>
+</html>

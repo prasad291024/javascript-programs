@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Window Navigation Methods Demo</title>
+</head>
+<body>
+  <h2>Window Navigation Methods</h2>
+
+  <button onclick="openNewWindow()">Open New Window</button>
+  <button onclick="closeNewWindow()">Close New Window</button>
+  <button onclick="stopLoading()">Stop Page Loading</button>
+  <button onclick="printPage()">Print This Page</button>
+
+  <script>
+    let newWindow;
+
+    // 1. window.open() - Opens a new tab or window
+    function openNewWindow() {
+      newWindow = window.open("https://www.example.com", "_blank", "width=600,height=400");
+      console.log("New window opened.");
+    }
+
+    // 2. window.close() - Closes the opened window
+    function closeNewWindow() {
+      if (newWindow && !newWindow.closed) {
+        newWindow.close();
+        console.log("New window closed.");
+      } else {
+        console.log("No window to close or already closed.");
+      }
+    }
+
+    // 3. window.stop() - Stops loading the current page
+    function stopLoading() {
+      window.stop();
+      console.log("Page loading stopped.");
+    }
+
+    // 4. window.print() - Opens the print dialog
+    function printPage() {
+      window.print();
+      console.log("Print dialog opened.");
+    }
+  </script>
+</body>
+</html>
