@@ -1,0 +1,75 @@
+JavaScript Conditional Statements
+----------------------------------
+
+Conditional statements are used to make decisions based on different conditions. By default, statements in a JavaScript program are executed sequentially from top to bottom. However, if the logic of the program requires it, this flow can be altered in two main ways:
+
+1. Conditional Execution:
+   A block of one or more statements is executed only if a specific condition evaluates to true.
+
+2. Repetitive Execution:
+   A block of one or more statements is executed repeatedly as long as a specific condition remains true.
+   (Note: This is typically handled using loops and is covered separately.)
+
+In this section, we focus on conditional execution using the following constructs:
+
+--------------------------------------------------
+Types of Conditional Statements in JavaScript:
+--------------------------------------------------
+
+1. if Statement:
+   Executes a block of code if the specified condition is true.
+
+   Example:
+   if (score > 50) {
+     console.log("You passed!");
+   }
+
+2. if...else Statement:
+   Executes one block if the condition is true, and another block if it is false.
+
+   Example:
+   if (score > 50) {
+     console.log("You passed!");
+   } else {
+     console.log("You failed.");
+   }
+
+3. if...else if...else Statement:
+   Checks multiple conditions in sequence and executes the first block that matches.
+
+   Example:
+   if (score > 90) {
+     console.log("Excellent!");
+   } else if (score > 75) {
+     console.log("Good job!");
+   } else {
+     console.log("Keep trying.");
+   }
+
+4. switch Statement:
+   Evaluates an expression and matches it against multiple case values.
+
+   Example:
+   switch (grade) {
+     case 'A':
+       console.log("Excellent!");
+       break;
+     case 'B':
+       console.log("Good!");
+       break;
+     default:
+       console.log("Needs improvement.");
+   }
+
+5. Ternary Operator:
+   A shorthand way to write simple if...else statements.
+
+   Example:
+   const result = (score > 50) ? "Pass" : "Fail";
+
+--------------------------------------------------
+Note:
+Comparison operators (==, ===, !=, >, <, >=, <=) and logical operators (&&, ||, !) are commonly used in conditional expressions.
+--------------------------------------------------
+
+Conditional statements are essential for controlling the flow of logic in any JavaScript program. They allow your code to make decisions and respond dynamically to different inputs and situations.
