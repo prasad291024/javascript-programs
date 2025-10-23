@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Date Object Demo</title>
+</head>
+<body>
+  <h2>JavaScript Date Object</h2>
+  <button onclick="showDateInfo()">Show Current Date Info</button>
+
+  <script>
+    function showDateInfo() {
+      const now = new Date();
+
+      console.log("Right Now: ", now) // Logs the current date and time
+      console.log("Full Year:", now.getFullYear()); // Logs the current year
+      console.log("Month (0-11):", now.getMonth()); // Logs the current month (0-indexed)
+      console.log("Date (1-31):", now.getDate()); // Logs the current date of the month
+      console.log("Day of Week (0-6):", now.getDay()); // Logs the current day of the week
+      console.log("Hours:", now.getHours()); // Logs the current hour 
+      console.log("Minutes:", now.getMinutes()); // Logs the current minutes
+      console.log("Seconds:", now.getSeconds()); // Logs the current seconds 
+      console.log("Milliseconds:", now.getMilliseconds()); // Logs the current milliseconds 
+      console.log("Time (ms since 1970):", now.getTime()); // Logs the time in milliseconds since January 1, 1970
+      
+    }
+  </script>
+</body>
+</html>
