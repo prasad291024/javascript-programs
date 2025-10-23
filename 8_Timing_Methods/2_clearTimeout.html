@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>clearTimeout Demo</title>
+</head>
+<body>
+  <h2>clearTimeout Example</h2>
+  <button onclick="startTimer()">Start Timer</button>
+  <button onclick="cancelTimer()">Cancel Timer</button>
+
+  <script>
+    let timeoutId;
+
+    function startTimer() {
+      timeoutId = setTimeout(() => {
+        alert("This should NOT appear if canceled!");
+      }, 5000);
+      console.log("Timer set for 5 seconds.");
+    }
+
+    function cancelTimer() {
+      clearTimeout(timeoutId);
+      console.log("Timer canceled.");
+    }
+  </script>
+</body>
+</html>

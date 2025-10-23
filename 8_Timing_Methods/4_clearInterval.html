@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>clearInterval Demo</title>
+</head>
+<body>
+  <h2>clearInterval Example</h2>
+  <button onclick="startRepeating()">Start Repeating</button>
+  <button onclick="stopRepeating()">Stop Repeating</button>
+
+  <script>
+    let intervalId;
+
+    function startRepeating() {
+      intervalId = setInterval(() => {
+        console.log("Repeating every second...");
+      }, 1000);
+    }
+
+    function stopRepeating() {
+      clearInterval(intervalId);
+      console.log("Interval stopped.");
+    }
+  </script>
+</body>
+</html>

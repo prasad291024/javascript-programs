@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>setTimeout Demo</title>
+</head>
+<body>
+  <h2>setTimeout Example</h2>
+  <button onclick="startTimeout()">Start Timeout</button>
+
+  <script>
+    function startTimeout() {
+      console.log("Timer started...");
+      setTimeout(() => {
+        alert("This message appears after 3 seconds!");
+      }, 3000);
+    }
+  </script>
+</body>
+</html>
