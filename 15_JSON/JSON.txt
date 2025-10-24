@@ -1,0 +1,16 @@
+JSON stands for JavaScript Object Notation. 
+It’s a lightweight, text-based format for storing and exchanging data. 
+It looks like a JavaScript object but is purely data and no functions.
+
+Basic JSON Structure
+{
+  "name": "Prasad",
+  "role": "QA Engineer",
+  "skills": ["JavaScript", "Selenium", "Postman"],
+  "experience": 5,
+  "available": true
+}
+
+Note: 
+Keys are always strings
+Values can be strings, numbers, booleans, arrays, or other objects

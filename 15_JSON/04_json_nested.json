@@ -1,0 +1,9 @@
+{
+  "user": {
+    "name": "Prasad",
+    "contact": {
+      "email": "prasad@example.com",
+      "phone": "9876543210"
+    }
+  }
+}
